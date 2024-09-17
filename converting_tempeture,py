@@ -1,0 +1,13 @@
+repeat = int(input("enter your loop repeat:"))
+for i in range(repeat):
+    temp = float(input("Enter the data you want to convert:"))
+    choice=input(" convert the tempeture [celsius to fahrenheit:enterC]/n,[fahrenheit to celsius:enterF]/n[For exit press:x]:").upper()
+    if choice=="C":
+        celsius=(temp * 9 / 5) + 32
+        print(celsius)
+    elif choice=="F":
+        fahrenheit=(temp- 32) * 5 / 9
+        print(fahrenheit)
+    else:
+        break
+
